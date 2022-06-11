@@ -1,21 +1,31 @@
-// https://www.hackerrank.com/challenges/30-hello-world/problem?isFullScreen=true
-#include <cmath>
-#include <cstdio>
-#include <vector>
+// https://www.hackerrank.com/challenges/30-data-types/problem?h_r=email&isFullScreen=true
 #include <iostream>
-#include <algorithm>
-using namespace std;
-int main() {
-    // Declare a variable named 'input_string' to hold our input.
-    string input_string; 
-    
-    // Read a full line of input from stdin (cin) and save it to our variable, input_string.
-    getline(cin, input_string); 
-    
-    // Print a string literal saying "Hello, World." to stdout using cout.
-    cout << "Hello, World." << endl;
-    cout << input_string << endl;
-    // TODO: Write a line of code here that prints the contents of input_string to stdout.
+#include <iomanip>
+#include <limits>
 
+using namespace std;
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    string s = "HackerRank ";
+
+    // Declare second integer, double, and String variables.
+    int a;
+    double b;
+    string c;
+    cin >> a >> b;
+    getline(cin,c); // cin space so 
+    getline(cin,c);
+    // Read and save an integer, double, and String to your variables.
+    // Note: If you have trouble reading the entire string, please go back and review the Tutorial closely.
+    
+    // Print the sum of both integer variables on a new line.
+    cout << a+i << "\n"; 
+    // Print the sum of the double variables on a new line.
+    cout << fixed << setprecision(1) << b+d << "\n"; 
+    // Concatenate and print the String variables on a new line
+    // The 's' variable above should be printed first.
+    cout << s << c << "\n"; 
     return 0;
 }
